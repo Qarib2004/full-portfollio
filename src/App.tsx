@@ -72,7 +72,7 @@ function App() {
         "Modern e-commerce platform built with Next.js frontend and Nest.js backend, featuring Junior product catalog and user management.",
       tech: ["Next.js", "Nest.js", "TypeScript", "PostgreSQL", "Shadcn"],
       github: "https://github.com/Qarib2004/NeoShop",
-      status: "In Progress",
+      status: "Completed",
     },
   ];
 
