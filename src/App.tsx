@@ -54,7 +54,7 @@ function App() {
       title: "React Classroom Project",
       description:
         "Educational platform for managing classroom activities, assignments, and student-teacher interactions.",
-      tech: ["React", "JavaScript", "Redux", "REST API"],
+      tech: ["React", "JavaScript", "Redux", "REST API","Socket.io"],
       github: "https://github.com/nurlan1717/react-classroom-project",
       status: "Completed",
     },
@@ -70,7 +70,7 @@ function App() {
       title: "NeoShop",
       description:
         "Modern e-commerce platform built with Next.js frontend and Nest.js backend, featuring Junior product catalog and user management.",
-      tech: ["Next.js", "Nest.js", "TypeScript", "PostgreSQL", "Shadcn"],
+      tech: ["Next.js", "Nest.js", "TypeScript", "PostgreSQL", "Shadcn","Google OAuth 2.0","Prisma","PostgreSQL","DOCKER"],
       github: "https://github.com/Qarib2004/NeoShop",
       status: "Completed",
     },
