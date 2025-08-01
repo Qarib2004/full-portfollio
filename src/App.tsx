@@ -46,7 +46,7 @@ function App() {
       title: "Reddit Clone",
       description:
         "Full-featured Reddit clone with user authentication, post creation, voting system, and real-time comments.",
-      tech: ["React", "Node.js", "MongoDB", "Socket.io"],
+      tech: ["React", "Node.js", "MongoDB", "Socket.io","OAuth 2.0 Google","Nodemailer"],
       github: "https://github.com/Qarib2004/reddit",
       status: "Completed",
     },
