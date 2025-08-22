@@ -46,7 +46,14 @@ function App() {
       title: "Reddit Clone",
       description:
         "Full-featured Reddit clone with user authentication, post creation, voting system, and real-time comments.",
-      tech: ["React", "Node.js", "MongoDB", "Socket.io","OAuth 2.0 Google","Nodemailer"],
+      tech: [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Socket.io",
+        "OAuth 2.0 Google",
+        "Nodemailer",
+      ],
       github: "https://github.com/Qarib2004/reddit",
       status: "Completed",
     },
@@ -54,7 +61,7 @@ function App() {
       title: "React Classroom Project",
       description:
         "Educational platform for managing classroom activities, assignments, and student-teacher interactions.",
-      tech: ["React", "JavaScript", "Redux", "REST API","Socket.io"],
+      tech: ["React", "JavaScript", "Redux", "REST API", "Socket.io"],
       github: "https://github.com/nurlan1717/react-classroom-project",
       status: "Completed",
     },
@@ -70,9 +77,36 @@ function App() {
       title: "NeoShop",
       description:
         "Modern e-commerce platform built with Next.js frontend and Nest.js backend, featuring Junior product catalog and user management.",
-      tech: ["Next.js", "Nest.js", "TypeScript", "PostgreSQL", "Shadcn","Google OAuth 2.0","Prisma","PostgreSQL","DOCKER"],
+      tech: [
+        "Next.js",
+        "Nest.js",
+        "TypeScript",
+        "PostgreSQL",
+        "Shadcn",
+        "Google OAuth 2.0",
+        "Prisma",
+        "PostgreSQL",
+        "DOCKER",
+      ],
       github: "https://github.com/Qarib2004/NeoShop",
       status: "Completed",
+    },
+    {
+      title: "Cinefy",
+      description:
+        "A modern movie streaming platform built with Next.js (frontend) and Nest.js (backend). Features include movie catalog, genre-based browsing, user authentication.Panel:admin,user.",
+      tech: [
+        "Next.js",
+        "Nest.js",
+        "TypeScript",
+        "PostgreSQL",
+        "Prisma",
+        "Docker",
+      ],
+      github: "https://github.com/Qarib2004/cinefy-project",
+      status: "İn Progress",
+      deploy: "Frontend:Vercel,Backend:Render,Database:Neon Console",
+      live_demo: "https://cinefy-project.vercel.app/",
     },
   ];
 
@@ -168,10 +202,10 @@ function App() {
               </p>
               <p className="text-lg text-slate-300 leading-relaxed">
                 My journey in software development has led me through various
-                technologies, from building responsive React and Node.js applications to
-                developing robust backend systems with Java Spring Boot. I'm
-                always eager to learn new technologies and take on challenging
-                projects.
+                technologies, from building responsive React and Node.js
+                applications to developing robust backend systems with Java
+                Spring Boot. I'm always eager to learn new technologies and take
+                on challenging projects.
               </p>
               <div className="flex items-center space-x-2 text-emerald-400">
                 <MapPin className="w-5 h-5" />
@@ -408,6 +442,13 @@ function App() {
                   ))}
                 </div>
 
+                {project.deploy && (
+                  <div className="mb-6 text-sm text-slate-400">
+                    <span className="font-medium text-slate-300">Deploy:</span>{" "}
+                    {project.deploy}
+                  </div>
+                )}
+
                 <div className="flex gap-4">
                   <a
                     href={project.github}
@@ -419,13 +460,16 @@ function App() {
                     <Github className="w-5 h-5" />
                     <span>GitHub</span>
                   </a>
-                  <button
+                  <a
+                    href={project.live_demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors duration-300
-                                   hover:bg-slate-700/50 px-4 py-2 rounded-lg"
+             hover:bg-slate-700/50 px-4 py-2 rounded-lg"
                   >
                     <ExternalLink className="w-5 h-5" />
                     <span>Live Demo</span>
-                  </button>
+                  </a>
                 </div>
               </div>
             ))}
