@@ -87,6 +87,7 @@ function App() {
         "Prisma",
         "PostgreSQL",
         "DOCKER",
+        'TailwindCSS'
       ],
       github: "https://github.com/Qarib2004/NeoShop",
       status: "Completed",
@@ -102,6 +103,7 @@ function App() {
         "PostgreSQL",
         "Prisma",
         "Docker",
+        'TailwindCSS'
       ],
       github: "https://github.com/Qarib2004/cinefy-project",
       status: "İn Progress",
