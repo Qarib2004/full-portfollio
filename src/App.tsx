@@ -45,7 +45,7 @@ function App() {
     {
       title: "Reddit Clone",
       description:
-        "Full-featured Reddit clone with user authentication, post creation, voting system, and real-time comments.",
+        "Full-featured Reddit clone with user authentication, post creation, voting system, and real-time comments.Panel:admin,moderator,user",
       tech: [
         "React",
         "Node.js",
