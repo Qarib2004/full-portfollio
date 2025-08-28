@@ -16,10 +16,8 @@ import { useState } from "react";
 import ProjectModal from "./ProjectModal";
 
 function App() {
-
   const [modalOpen, setModalOpen] = useState(false);
-  const [selectedProject, setSelectedProject] = useState<string>('');
-
+  const [selectedProject, setSelectedProject] = useState<string>("");
 
   const skills = {
     frontend: [
@@ -71,7 +69,7 @@ function App() {
       "/reddit-images/responcive desighn 2.png",
       "/reddit-images/responcive design.png",
     ],
-    "NeoShop": [
+    NeoShop: [
       "/neoshop-images/NeoShop - basket.png",
       "/neoshop-images/NeoShop - catalog page.png",
       "/neoshop-images/NeoShop - craete categories page.png",
@@ -89,10 +87,8 @@ function App() {
       "/neoshop-images/NeoShop - store statistics page.png",
       "/neoshop-images/NeoShop- crate colors page.png",
       "/neoshop-images/NeoShop- login page.png",
-
-    ]
+    ],
   };
-
 
   const projects = [
     {
@@ -117,7 +113,7 @@ function App() {
       tech: ["React", "JavaScript", "Redux", "REST API", "Socket.io"],
       github: "https://github.com/nurlan1717/react-classroom-project",
       status: "Completed",
-      live_demo:"https://react-classroom-project.vercel.app/"
+      live_demo: "https://react-classroom-project.vercel.app/",
     },
     {
       title: "Commerce Backend",
@@ -141,8 +137,8 @@ function App() {
         "Prisma",
         "PostgreSQL",
         "DOCKER",
-        'TailwindCSS',
-       ' Stripe'
+        "TailwindCSS",
+        " Stripe",
       ],
       github: "https://github.com/Qarib2004/NeoShop",
       status: "Completed",
@@ -158,8 +154,8 @@ function App() {
         "PostgreSQL",
         "Prisma",
         "Docker",
-        'TailwindCSS',
-        'Stripe'
+        "TailwindCSS",
+        "Stripe",
       ],
       github: "https://github.com/Qarib2004/cinefy-project",
       status: "İn Progress",
@@ -168,7 +164,6 @@ function App() {
     },
   ];
 
-
   const openModal = (projectTitle: string) => {
     setSelectedProject(projectTitle);
     setModalOpen(true);
@@ -176,10 +171,8 @@ function App() {
 
   const closeModal = () => {
     setModalOpen(false);
-    setSelectedProject('');
+    setSelectedProject("");
   };
-
-
 
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
@@ -532,28 +525,29 @@ function App() {
                     <span>GitHub</span>
                   </a>
                   {project.live_demo ? (
-  <a
-    href={project.live_demo}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors duration-300
+                    <a
+                      href={project.live_demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors duration-300
            hover:bg-slate-700/50 px-4 py-2 rounded-lg"
+                    >
+                      <ExternalLink className="w-5 h-5" />
+                      <span>Live Demo</span>
+                    </a>
+                  ) : null}
+
+{project.title ? (
+  <button
+    onClick={() => openModal(project.title)}
+    className="flex items-center gap-2 text-slate-300 hover:text-white transition-all duration-300
+               hover:bg-blue-600/20 hover:border-blue-500/30 border border-slate-600/30 px-4 py-2 rounded-lg"
   >
-    <ExternalLink className="w-5 h-5" />
-    <span>Live Demo</span>
-  </a>
-) : null}
+    <Eye className="w-5 h-5" />
+    <span>View Details</span>
+  </button>
+): null}
 
-
-                  <button
-                    onClick={() => openModal(project.title)}
-                    className="flex items-center gap-2 text-slate-300 hover:text-white transition-all duration-300
-                             hover:bg-blue-600/20 hover:border-blue-500/30 border border-slate-600/30 px-4 py-2 rounded-lg"
-                  >
-                    <Eye className="w-5 h-5" />
-                    <span>View Details</span>
-                  </button>
-                  
                 </div>
               </div>
             ))}
@@ -675,10 +669,12 @@ function App() {
         isOpen={modalOpen}
         onClose={closeModal}
         projectTitle={selectedProject}
-        images={projectImages[selectedProject as keyof typeof projectImages] || []}
+        images={
+          projectImages[selectedProject as keyof typeof projectImages] || []
+        }
       />
     </div>
   );
 }
 
-export default App
+export default App;
