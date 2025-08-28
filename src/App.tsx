@@ -78,7 +78,24 @@ function App() {
       // Добавьте пути к изображениям для этого проекта
     ],
     "NeoShop": [
-      // Добавьте пути к изображениям для этого проекта
+      "/public/neoshop-images/NeoShop - basket.png",
+      "/public/neoshop-images/NeoShop - catalog page.png",
+      "/public/neoshop-images/NeoShop - craete categories page.png",
+      "/public/neoshop-images/NeoShop - create goods page.png",
+      "/public/neoshop-images/NeoShop - favorites page.png",
+      "/public/neoshop-images/NeoShop - home page.png",
+      "/public/neoshop-images/NeoShop - product page 2.png",
+      "/public/neoshop-images/NeoShop - product page.png",
+      "/public/neoshop-images/NeoShop - responcive 2.png",
+      "/public/neoshop-images/NeoShop - responcive.png",
+      "/public/neoshop-images/NeoShop - settings store page.png",
+      "/public/neoshop-images/NeoShop - store categories page.png",
+      "/public/neoshop-images/NeoShop - store colors page.png",
+      "/public/neoshop-images/NeoShop - store goods page.png",
+      "/public/neoshop-images/NeoShop - store statistics page.png",
+      "/public/neoshop-images/NeoShop- crate colors page.png",
+      "/public/neoshop-images/NeoShop- login page.png",
+
     ],
     "Cinefy": [
       // Добавьте пути к изображениям для этого проекта
