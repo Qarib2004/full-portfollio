@@ -10,9 +10,17 @@ import {
   Server,
   Globe,
   Monitor,
+  Eye,
 } from "lucide-react";
+import { useState } from "react";
+import ProjectModal from "./ProjectModal";
 
 function App() {
+
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState<string>('');
+
+
   const skills = {
     frontend: [
       { name: "React", level: "Junior" },
@@ -40,6 +48,43 @@ function App() {
       { name: "Vite", level: "Junior" },
     ],
   };
+
+  const projectImages = {
+    "Reddit Clone": [
+      "./reddit-images/admin panel - community page.png",
+      "./reddit-images/admin panel - content page 2.png",
+      "./reddit-images/admin panel - content page.png",
+      "./reddit-images/admin panel - request moderator page.png",
+      "./reddit-images/moderator panel - reported comment page.png",
+      "./reddit-images/moderator panel - reported post page.png",
+      "./reddit-images/moderator panel.png",
+      "./reddit-images/reddit - community page.png",
+      "./reddit-images/reddit - messages and chats page.png",
+      "./reddit-images/reddit - profile page.png",
+      "./reddit-images/reddit - saved page.png",
+      "./reddit-images/reddit - settings page 2.png",
+      "./reddit-images/reddit - settings page.png",
+      "./reddit-images/reddit-create  ppost page.png",
+      "./reddit-images/reddit-home page.png",
+      "./reddit-images/reddit-login page.png",
+      "./reddit-images/reddit-subscribed page.png",
+      "./reddit-images/responcive desighn 2.png",
+      "./reddit-images/responcive design.png",
+    ],
+    "React Classroom Project": [
+      // Добавьте пути к изображениям для этого проекта
+    ],
+    "Commerce Backend": [
+      // Добавьте пути к изображениям для этого проекта
+    ],
+    "NeoShop": [
+      // Добавьте пути к изображениям для этого проекта
+    ],
+    "Cinefy": [
+      // Добавьте пути к изображениям для этого проекта
+    ],
+  };
+
 
   const projects = [
     {
@@ -113,6 +158,19 @@ function App() {
       live_demo: "https://cinefy-project.vercel.app/",
     },
   ];
+
+
+  const openModal = (projectTitle: string) => {
+    setSelectedProject(projectTitle);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+    setSelectedProject('');
+  };
+
+
 
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
@@ -474,6 +532,15 @@ function App() {
                     <ExternalLink className="w-5 h-5" />
                     <span>Live Demo</span>
                   </a>
+                  <button
+                    onClick={() => openModal(project.title)}
+                    className="flex items-center gap-2 text-slate-300 hover:text-white transition-all duration-300
+                             hover:bg-blue-600/20 hover:border-blue-500/30 border border-slate-600/30 px-4 py-2 rounded-lg"
+                  >
+                    <Eye className="w-5 h-5" />
+                    <span>View Details</span>
+                  </button>
+                  
                 </div>
               </div>
             ))}
@@ -590,8 +657,15 @@ function App() {
           </div>
         </div>
       </footer>
+
+      <ProjectModal
+        isOpen={modalOpen}
+        onClose={closeModal}
+        projectTitle={selectedProject}
+        images={projectImages[selectedProject as keyof typeof projectImages] || []}
+      />
     </div>
   );
 }
 
-export default App;
+export default App
