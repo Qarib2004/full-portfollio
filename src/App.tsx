@@ -126,6 +126,7 @@ function App() {
       tech: ["React", "JavaScript", "Redux", "REST API", "Socket.io"],
       github: "https://github.com/nurlan1717/react-classroom-project",
       status: "Completed",
+      live_demo:"https://react-classroom-project.vercel.app/"
     },
     {
       title: "Commerce Backend",
