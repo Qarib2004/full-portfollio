@@ -71,12 +71,6 @@ function App() {
       "/reddit-images/responcive desighn 2.png",
       "/reddit-images/responcive design.png",
     ],
-    "React Classroom Project": [
-      // Добавьте пути к изображениям для этого проекта
-    ],
-    "Commerce Backend": [
-      // Добавьте пути к изображениям для этого проекта
-    ],
     "NeoShop": [
       "/neoshop-images/NeoShop - basket.png",
       "/neoshop-images/NeoShop - catalog page.png",
@@ -96,10 +90,7 @@ function App() {
       "/neoshop-images/NeoShop- crate colors page.png",
       "/neoshop-images/NeoShop- login page.png",
 
-    ],
-    "Cinefy": [
-      // Добавьте пути к изображениям для этого проекта
-    ],
+    ]
   };
 
 
@@ -540,16 +531,19 @@ function App() {
                     <Github className="w-5 h-5" />
                     <span>GitHub</span>
                   </a>
-                  <a
-                    href={project.live_demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors duration-300
-             hover:bg-slate-700/50 px-4 py-2 rounded-lg"
-                  >
-                    <ExternalLink className="w-5 h-5" />
-                    <span>Live Demo</span>
-                  </a>
+                  {project.live_demo && (
+  <a
+    href={project.live_demo}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors duration-300
+           hover:bg-slate-700/50 px-4 py-2 rounded-lg"
+  >
+    <ExternalLink className="w-5 h-5" />
+    <span>Live Demo</span>
+  </a>
+)}
+
                   <button
                     onClick={() => openModal(project.title)}
                     className="flex items-center gap-2 text-slate-300 hover:text-white transition-all duration-300
