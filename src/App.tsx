@@ -531,7 +531,7 @@ function App() {
                     <Github className="w-5 h-5" />
                     <span>GitHub</span>
                   </a>
-                  {project.live_demo && (
+                  {project.live_demo ? (
   <a
     href={project.live_demo}
     target="_blank"
@@ -542,7 +542,8 @@ function App() {
     <ExternalLink className="w-5 h-5" />
     <span>Live Demo</span>
   </a>
-)}
+) : null}
+
 
                   <button
                     onClick={() => openModal(project.title)}
