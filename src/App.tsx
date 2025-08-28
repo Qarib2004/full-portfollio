@@ -162,6 +162,20 @@ function App() {
       deploy: "Frontend:Vercel,Backend:Render,Database:Neon Console",
       live_demo: "https://cinefy-project.vercel.app/",
     },
+    {
+      title: "DeliVery",
+      description: "Features include login, registration, token-based authentication, shopping basket, favorites, search functionality, category details page, and product details page.",
+      tech: [
+        "React Native",
+        "Nest.js",
+        "TypeScript",
+        "PostgreSQL",
+        "Prisma",
+        "Nativewind",
+      ],
+      github: "https://github.com/Qarib2004/DeliVery",
+      status: "Completed"
+    }    
   ];
 
   const openModal = (projectTitle: string) => {
