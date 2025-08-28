@@ -47,7 +47,7 @@ function App() {
     ],
   };
 
-  const projectImages = {
+  const projectImages: Record<string, string[]> = {
     "Reddit Clone": [
       "/reddit-images/admin panel - community page.png",
       "/reddit-images/admin panel - content page 2.png",
@@ -537,7 +537,7 @@ function App() {
                     </a>
                   ) : null}
 
-{project.title ? (
+{projectImages[project.title] && (
   <button
     onClick={() => openModal(project.title)}
     className="flex items-center gap-2 text-slate-300 hover:text-white transition-all duration-300
@@ -546,7 +546,8 @@ function App() {
     <Eye className="w-5 h-5" />
     <span>View Details</span>
   </button>
-): null}
+)}
+
 
                 </div>
               </div>
