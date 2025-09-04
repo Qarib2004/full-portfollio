@@ -164,7 +164,8 @@ function App() {
     },
     {
       title: "DeliVery",
-      description: "Features include login, registration, token-based authentication, shopping basket, favorites, search functionality, category details page, and product details page.",
+      description:
+        "Features include login, registration, token-based authentication, shopping basket, favorites, search functionality, category details page, and product details page.",
       tech: [
         "React Native",
         "Nest.js",
@@ -174,8 +175,31 @@ function App() {
         "Nativewind",
       ],
       github: "https://github.com/Qarib2004/DeliVery",
-      status: "Completed"
-    }    
+      status: "Completed",
+    },
+    {
+      title: "Crix",
+      description:
+        "I will implement the ability to conduct live broadcasts by adding a subscription system, including premium subscriptions to streamers. There will also be a chat for the stream and full profile settings: display name, information about yourself, specifying social networks and editing the password and email. Users will be able to customize the site by changing the theme, main color and interface language (Azerbaijani, Russian, English). I will create a full functionality Telegram bot that will notify users about new streams on the channels they are subscribed to, and will also allow you to view your profile.",
+      tech: [
+        " Nest.js",
+        "GraphQL",
+        "Prisma",
+        "PostgreSQL",
+        "Redis",
+        "Docker",
+        "Telegraf",
+        " React Email",
+        " Next.js",
+        "Tailwind",
+        "Apollo Client",
+        " Zustand",
+        " React Hook Form",
+        "Zod",
+      ],
+      github: "https://github.com/Qarib2004/crix",
+      status: "In Progress",
+    },
   ];
 
   const openModal = (projectTitle: string) => {
@@ -551,18 +575,16 @@ function App() {
                     </a>
                   ) : null}
 
-{projectImages[project.title] && (
-  <button
-    onClick={() => openModal(project.title)}
-    className="flex items-center gap-2 text-slate-300 hover:text-white transition-all duration-300
+                  {projectImages[project.title] && (
+                    <button
+                      onClick={() => openModal(project.title)}
+                      className="flex items-center gap-2 text-slate-300 hover:text-white transition-all duration-300
                hover:bg-blue-600/20 hover:border-blue-500/30 border border-slate-600/30 px-4 py-2 rounded-lg"
-  >
-    <Eye className="w-5 h-5" />
-    <span>View Details</span>
-  </button>
-)}
-
-
+                    >
+                      <Eye className="w-5 h-5" />
+                      <span>View Details</span>
+                    </button>
+                  )}
                 </div>
               </div>
             ))}
