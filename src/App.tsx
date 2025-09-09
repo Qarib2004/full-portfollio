@@ -198,7 +198,8 @@ function App() {
         "Zod",
       ],
       github: "https://github.com/Qarib2004/crix",
-      status: "In Progress",
+      status: "completed",
+      deploy:"pending"
     },
   ];
 
