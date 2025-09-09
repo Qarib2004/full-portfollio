@@ -198,7 +198,7 @@ function App() {
         "Zod",
       ],
       github: "https://github.com/Qarib2004/crix",
-      status: "completed",
+      status: "Completed",
       deploy:"pending"
     },
   ];
