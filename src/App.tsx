@@ -28,23 +28,29 @@ function App() {
       { name: "HTML/CSS", level: "Junior" },
       { name: "Tailwind CSS", level: "Junior" },
       { name: "Redux", level: "Junior" },
-      { name: "Shadcn", level: "Junior", badge: "Learning" },
+      { name: "Shadcn", level: "Junior"},
+      { name: "Zustand", level: "Junior"}
     ],
     backend: [
       { name: "Java", level: "Junior" },
       { name: "Spring Boot", level: "Junior" },
       { name: "Node.js", level: "Junior" },
-      { name: "Nest.js", level: "Junior", badge: "Learning" },
+      { name: "Nest.js", level: "Junior" },
       { name: "PostgreSQL", level: "Junior" },
       { name: "MongoDB", level: "Junior" },
+      { name: "Redis", level: "Junior" },
       { name: "REST APIs", level: "Junior" },
+      { name: "GraphQL", level: "Junior"}
     ],
     tools: [
       { name: "Git/GitHub", level: "Junior" },
       { name: "Docker", level: "Junior" },
       { name: "Postman", level: "Junior" },
       { name: "Vite", level: "Junior" },
-    ],
+      { name: "npm", level: "Junior" },
+      { name: "Yarn", level: "Junior" },
+      { name: "Bun", level: "Junior" },
+    ]    
   };
 
   const projectImages: Record<string, string[]> = {
@@ -178,6 +184,19 @@ function App() {
       status: "Completed",
     },
     {
+      title: "musify-backend",
+      description:"Musify is a music platform that allows you to:register users and manage roles (USER, ADMIN), upload and store albums and songs with cover images and audio files,store media files (images, audio) in Cloudinary, manage API access with Spring Security and JWT authentication,retrieve a list of albums and songs, as well as delete them.",
+      tech: [
+        "Spring Boot",
+        "Spring Security",
+        "MongoDB",
+        "JWT",
+        "Cloudinary"
+      ],
+      github: "https://github.com/Qarib2004/musify-backend",
+      status: "Completed"
+    }, 
+    {
       title: "Crix",
       description:
         "I will implement the ability to conduct live broadcasts by adding a subscription system, including premium subscriptions to streamers. There will also be a chat for the stream and full profile settings: display name, information about yourself, specifying social networks and editing the password and email. Users will be able to customize the site by changing the theme, main color and interface language (Azerbaijani, Russian, English). I will create a full functionality Telegram bot that will notify users about new streams on the channels they are subscribed to, and will also allow you to view your profile.",
@@ -201,6 +220,7 @@ function App() {
       status: "Completed",
       deploy:"pending"
     },
+
   ];
 
   const openModal = (projectTitle: string) => {
@@ -216,6 +236,7 @@ function App() {
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
   };
+
 
   return (
     <div className="min-h-screen bg-slate-900 text-white">
@@ -256,7 +277,7 @@ function App() {
             </h2>
             <p className="text-xl text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed">
               Passionate about crafting exceptional digital experiences with
-              modern technologies. Specializing in React,Node.js, Java Spring
+              modern technologies. Specializing in React,Next.js,NestJS,Node.js,Spring
               Boot, and building scalable web applications.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -443,11 +464,11 @@ function App() {
                             ? "Junior"
                             : "Junior"}
                         </span>
-                        {skill.badge && (
+                        {/* {skill.badge && (
                           <span className="px-2 py-1 text-xs rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
                             {skill.badge}
                           </span>
-                        )}
+                        )} */}
                       </div>
                     </div>
                   </div>
