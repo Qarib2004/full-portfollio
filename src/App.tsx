@@ -24,7 +24,7 @@ function App() {
       { name: "React", level: "Junior" },
       { name: "TypeScript", level: "Junior" },
       { name: "JavaScript", level: "Junior" },
-      { name: "Next.js", level: "Junior", badge: "Learning" },
+      { name: "Next.js", level: "Junior"},
       { name: "HTML/CSS", level: "Junior" },
       { name: "Tailwind CSS", level: "Junior" },
       { name: "Redux", level: "Junior" },
@@ -416,7 +416,7 @@ function App() {
                         >
                           Junior
                         </span>
-                        {skill.badge && (
+                        {/* {skill.badge && (
                           <span
                             className={`px-2 py-1 text-xs rounded-full ${
                               skill.badge === "New"
@@ -426,7 +426,7 @@ function App() {
                           >
                             {skill.badge}
                           </span>
-                        )}
+                        )} */}
                       </div>
                     </div>
                   </div>
