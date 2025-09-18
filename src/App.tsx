@@ -164,7 +164,7 @@ function App() {
         "Stripe",
       ],
       github: "https://github.com/Qarib2004/cinefy-project",
-      status: "İn Progress",
+      status: "Completed",
       deploy: "Frontend:Vercel,Backend:Render,Database:Neon Console",
       live_demo: "https://cinefy-project.vercel.app/",
     },
