@@ -21,35 +21,35 @@ function App() {
 
   const skills = {
     frontend: [
-      { name: "React", level: "Junior" },
-      { name: "TypeScript", level: "Junior" },
-      { name: "JavaScript", level: "Junior" },
-      { name: "Next.js", level: "Junior"},
-      { name: "HTML/CSS", level: "Junior" },
-      { name: "Tailwind CSS", level: "Junior" },
-      { name: "Redux", level: "Junior" },
-      { name: "Shadcn", level: "Junior"},
-      { name: "Zustand", level: "Junior"}
+      { name: "React", level: "" },
+      { name: "TypeScript", level: "" },
+      { name: "JavaScript", level: "" },
+      { name: "Next.js", level: ""},
+      { name: "HTML/CSS", level: "" },
+      { name: "Tailwind CSS", level: "" },
+      { name: "Redux", level: "" },
+      { name: "Shadcn", level: ""},
+      { name: "Zustand", level: ""}
     ],
     backend: [
-      { name: "Java", level: "Junior" },
-      { name: "Spring Boot", level: "Junior" },
-      { name: "Node.js", level: "Junior" },
-      { name: "Nest.js", level: "Junior" },
-      { name: "PostgreSQL", level: "Junior" },
-      { name: "MongoDB", level: "Junior" },
-      { name: "Redis", level: "Junior" },
-      { name: "REST APIs", level: "Junior" },
-      { name: "GraphQL", level: "Junior"}
+      { name: "Java", level: "" },
+      { name: "Spring Boot", level: "" },
+      { name: "Node.js", level: "" },
+      { name: "Nest.js", level: "" },
+      { name: "PostgreSQL", level: "" },
+      { name: "MongoDB", level: "" },
+      { name: "Redis", level: "" },
+      { name: "REST APIs", level: "" },
+      { name: "GraphQL", level: ""}
     ],
     tools: [
-      { name: "Git/GitHub", level: "Junior" },
-      { name: "Docker", level: "Junior" },
-      { name: "Postman", level: "Junior" },
-      { name: "Vite", level: "Junior" },
-      { name: "npm", level: "Junior" },
-      { name: "Yarn", level: "Junior" },
-      { name: "Bun", level: "Junior" },
+      { name: "Git/GitHub", level: "" },
+      { name: "Docker", level: "" },
+      { name: "Postman", level: "" },
+      { name: "Vite", level: "" },
+      { name: "npm", level: "" },
+      { name: "Yarn", level: "" },
+      { name: "Bun", level: "" },
     ]    
   };
 
@@ -132,7 +132,7 @@ function App() {
     {
       title: "NeoShop",
       description:
-        "Modern e-commerce platform built with Next.js frontend and Nest.js backend, featuring Junior product catalog and user management.",
+        "Modern e-commerce platform built with Next.js frontend and Nest.js backend, featuring  product catalog and user management.",
       tech: [
         "Next.js",
         "Nest.js",
@@ -382,7 +382,7 @@ function App() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-emerald-400 bg-clip-text text-transparent">
-              Skills & Juniorise
+              Skills & ise
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-emerald-500 mx-auto"></div>
           </div>
@@ -414,7 +414,7 @@ function App() {
                               : "bg-blue-300/20 text-blue-300 border border-blue-300/30"
                           }`}
                         >
-                          Junior
+                          
                         </span>
                         {/* {skill.badge && (
                           <span
@@ -461,8 +461,8 @@ function App() {
                           }`}
                         >
                           {skill.level === "90%" || skill.level === "85%"
-                            ? "Junior"
-                            : "Junior"}
+                            ? ""
+                            : ""}
                         </span>
                         {/* {skill.badge && (
                           <span className="px-2 py-1 text-xs rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
@@ -504,8 +504,8 @@ function App() {
                         }`}
                       >
                         {skill.level === "85%" || skill.level === "80%"
-                          ? "Junior"
-                          : "Junior"}
+                          ? ""
+                          : ""}
                       </span>
                     </div>
                   </div>
