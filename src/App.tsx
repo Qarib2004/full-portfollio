@@ -168,6 +168,8 @@ function App() {
         "DOCKER",
         "TailwindCSS",
         " Stripe",
+        "Jest",
+        "React Testing Library"
       ],
       github: "https://github.com/Qarib2004/NeoShop",
       status: "Completed",
