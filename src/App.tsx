@@ -94,6 +94,29 @@ function App() {
       "/neoshop-images/NeoShop- crate colors page.png",
       "/neoshop-images/NeoShop- login page.png",
     ],
+    Crix: [
+      "/crix-images/1",
+      "/crix-images/2",
+      "/crix-images/3",
+      "/crix-images/4",
+      "/crix-images/5",
+      "/crix-images/6",
+      "/crix-images/7",
+      "/crix-images/8",
+      "/crix-images/9",
+      "/crix-images/10",
+      "/crix-images/11",
+      "/crix-images/12",
+      "/crix-images/13",
+      "/crix-images/14",
+      "/crix-images/15",
+      "/crix-images/16",
+      "/crix-images/17",
+      "/crix-images/18",
+      "/crix-images/19",
+      "/crix-images/20",
+      "/crix-images/21"
+    ]    
   };
 
   const projects = [
