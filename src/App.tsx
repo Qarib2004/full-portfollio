@@ -238,11 +238,11 @@ function App() {
         " Zustand",
         " React Hook Form",
         "Zod",
+        "Kafka"
       ],
       github: "https://github.com/Qarib2004/crix",
-      status: "Completed",
-      deploy:"pending"
-    },
+      status: "Completed"   
+     }
 
   ];
 
