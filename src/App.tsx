@@ -24,33 +24,36 @@ function App() {
       { name: "React", level: "" },
       { name: "TypeScript", level: "" },
       { name: "JavaScript", level: "" },
-      { name: "Next.js", level: ""},
+      { name: "Next.js", level: "" },
       { name: "HTML/CSS", level: "" },
       { name: "Tailwind CSS", level: "" },
-      { name: "Redux", level: "" },
-      { name: "Shadcn", level: ""},
-      { name: "Zustand", level: ""}
+      // { name: "Redux", level: "" },
+      // { name: "Shadcn", level: ""},
+      { name: "Zustand", level: "" },
+      { name: "TanStack Query", level: "" },
     ],
     backend: [
-      { name: "Java", level: "" },
-      { name: "Spring Boot", level: "" },
+      // { name: "Java", level: "" },
+      // { name: "Spring Boot", level: "" },
       { name: "Node.js", level: "" },
       { name: "Nest.js", level: "" },
       { name: "PostgreSQL", level: "" },
       { name: "MongoDB", level: "" },
       { name: "Redis", level: "" },
       { name: "REST APIs", level: "" },
-      { name: "GraphQL", level: ""}
+      { name: "Kafka", level: "" },
+      // { name: "GraphQL", level: ""}
     ],
     tools: [
       { name: "Git/GitHub", level: "" },
       { name: "Docker", level: "" },
       { name: "Postman", level: "" },
+      { name: "Swagger", level: "" },
       { name: "Vite", level: "" },
       { name: "npm", level: "" },
       { name: "Yarn", level: "" },
       { name: "Bun", level: "" },
-    ]    
+    ],
   };
 
   const projectImages: Record<string, string[]> = {
@@ -115,8 +118,27 @@ function App() {
       "/crix-images/18.png",
       "/crix-images/19.png",
       "/crix-images/20.png",
-      "/crix-images/21.png"
-    ]    
+      "/crix-images/21.png",
+    ],
+    RentCar: [
+      "/rentcar-images/rent-1",
+      "/rentcar-images/rent-2",
+      "/rentcar-images/rent-3",
+      "/rentcar-images/rent-4",
+      "/rentcar-images/rent-5",
+      "/rentcar-images/rent-6",
+      "/rentcar-images/rent-7",
+      "/rentcar-images/rent-8",
+      "/rentcar-images/rent-9",
+      "/rentcar-images/rent-10",
+      "/rentcar-images/rent-11",
+      "/rentcar-images/rent-12",
+      "/rentcar-images/rent-13",
+      "/rentcar-images/rent-14",
+      "/rentcar-images/rent-15",
+      "/rentcar-images/rent-16",
+      "/rentcar-images/rent-17",
+    ],
   };
 
   const projects = [
@@ -136,6 +158,50 @@ function App() {
       status: "Completed",
     },
     {
+      title: "FoodGo",
+      description:
+        "Users can add restaurants and food items to favorites, add food to their basket, and leave reviews for food items.",
+      tech: [
+        "Next.js",
+        "PostgreSQL",
+        "Zustand",
+        "Auth.js",
+        "Tailwind",
+        "Zod",
+        "Prisma",
+      ],
+      github: "https://github.com/Qarib2004/fast-delivery",
+      status: "Completed",
+      deploy: "Vercel,Neon Console",
+      live_demo: "https://fast-delivery-stmn.vercel.app/",
+    },
+    {
+      title: "RentCar",
+      description:
+        "RentCar is a platform where car owners can rent out their vehicles, but first they must submit a request to the admin for approval. During registration, user passwords are securely hashed, and each user receives access and refresh tokens for authentication. Users can choose which car they want to rent. To communicate with the car owner, the platform provides a real-time chat powered by Socket.io, while Kafka is used to deliver real-time notifications. Users can leave reviews only after completing a car rental. The admin has access to all data about cars, users, and requests from users who want to become car owners and list their vehicles for rent.",
+      tech: [
+        "React",
+        "Zustand",
+        "TanStack Query",
+        "Tailwind",
+        "React Hook Form",
+        "zod",
+        "Embla Carousel",
+        "TypeScript",
+        "NestJS",
+        "PostgreSQL",
+        "Prisma",
+        "Socket.io",
+        "Redis",
+        "Stripe",
+        "Docker",
+        "Kafka",
+        "Swagger"
+      ],
+      github: "https://github.com/Qarib2004/rentcar",
+      status: "Completed",
+    },
+    {
       title: "React Classroom Project",
       description:
         "Educational platform for managing classroom activities, assignments, and student-teacher interactions.",
@@ -144,14 +210,14 @@ function App() {
       status: "Completed",
       live_demo: "https://react-classroom-project.vercel.app/",
     },
-    {
-      title: "Commerce Backend",
-      description:
-        "Robust e-commerce backend with Java Spring Boot, featuring product management, user authentication, and order processing.",
-      tech: ["Java", "Spring Boot", "PostgreSQL", "JWT"],
-      github: "https://github.com/Qarib2004/commerce-back-java",
-      status: "Completed",
-    },
+    // {
+    //   title: "Commerce Backend",
+    //   description:
+    //     "Robust e-commerce backend with Java Spring Boot, featuring product management, user authentication, and order processing.",
+    //   tech: ["Java", "Spring Boot", "PostgreSQL", "JWT"],
+    //   github: "https://github.com/Qarib2004/commerce-back-java",
+    //   status: "Completed",
+    // },
     {
       title: "NeoShop",
       description:
@@ -169,7 +235,7 @@ function App() {
         "TailwindCSS",
         " Stripe",
         "Jest",
-        "React Testing Library"
+        "React Testing Library",
       ],
       github: "https://github.com/Qarib2004/NeoShop",
       status: "Completed",
@@ -193,59 +259,58 @@ function App() {
       deploy: "Frontend:Vercel,Backend:Render,Database:Neon Console",
       live_demo: "https://cinefy-project.vercel.app/",
     },
-    {
-      title: "DeliVery",
-      description:
-        "Features include login, registration, token-based authentication, shopping basket, favorites, search functionality, category details page, and product details page.",
-      tech: [
-        "React Native",
-        "Nest.js",
-        "TypeScript",
-        "PostgreSQL",
-        "Prisma",
-        "Nativewind",
-      ],
-      github: "https://github.com/Qarib2004/DeliVery",
-      status: "Completed",
-    },
-    {
-      title: "musify-backend",
-      description:"Musify is a music platform that allows you to:register users and manage roles (USER, ADMIN), upload and store albums and songs with cover images and audio files,store media files (images, audio) in Cloudinary, manage API access with Spring Security and JWT authentication,retrieve a list of albums and songs, as well as delete them.",
-      tech: [
-        "Spring Boot",
-        "Spring Security",
-        "MongoDB",
-        "JWT",
-        "Cloudinary"
-      ],
-      github: "https://github.com/Qarib2004/musify-backend",
-      status: "Completed"
-    }, 
-    {
-      title: "Crix",
-      description:
-        "I will implement the ability to conduct live broadcasts by adding a subscription system, including premium subscriptions to streamers. There will also be a chat for the stream and full profile settings: display name, information about yourself, specifying social networks and editing the password and email. Users will be able to customize the site by changing the theme, main color and interface language (Azerbaijani, Russian, English). I will create a full functionality Telegram bot that will notify users about new streams on the channels they are subscribed to, and will also allow you to view your profile.",
-      tech: [
-        " Nest.js",
-        "GraphQL",
-        "Prisma",
-        "PostgreSQL",
-        "Redis",
-        "Docker",
-        "Telegraf",
-        " React Email",
-        " Next.js",
-        "Tailwind",
-        "Apollo Client",
-        " Zustand",
-        " React Hook Form",
-        "Zod",
-        "Kafka"
-      ],
-      github: "https://github.com/Qarib2004/crix",
-      status: "Completed"   
-     }
-
+    // {
+    //   title: "DeliVery",
+    //   description:
+    //     "Features include login, registration, token-based authentication, shopping basket, favorites, search functionality, category details page, and product details page.",
+    //   tech: [
+    //     "React Native",
+    //     "Nest.js",
+    //     "TypeScript",
+    //     "PostgreSQL",
+    //     "Prisma",
+    //     "Nativewind",
+    //   ],
+    //   github: "https://github.com/Qarib2004/DeliVery",
+    //   status: "Completed",
+    // },
+    // {
+    //   title: "musify-backend",
+    //   description:"Musify is a music platform that allows you to:register users and manage roles (USER, ADMIN), upload and store albums and songs with cover images and audio files,store media files (images, audio) in Cloudinary, manage API access with Spring Security and JWT authentication,retrieve a list of albums and songs, as well as delete them.",
+    //   tech: [
+    //     "Spring Boot",
+    //     "Spring Security",
+    //     "MongoDB",
+    //     "JWT",
+    //     "Cloudinary"
+    //   ],
+    //   github: "https://github.com/Qarib2004/musify-backend",
+    //   status: "Completed"
+    // },
+    // {
+    //   title: "Crix",
+    //   description:
+    //     "I will implement the ability to conduct live broadcasts by adding a subscription system, including premium subscriptions to streamers. There will also be a chat for the stream and full profile settings: display name, information about yourself, specifying social networks and editing the password and email. Users will be able to customize the site by changing the theme, main color and interface language (Azerbaijani, Russian, English). I will create a full functionality Telegram bot that will notify users about new streams on the channels they are subscribed to, and will also allow you to view your profile.",
+    //   tech: [
+    //     " Nest.js",
+    //     "GraphQL",
+    //     "Prisma",
+    //     "PostgreSQL",
+    //     "Redis",
+    //     "Docker",
+    //     "Telegraf",
+    //     " React Email",
+    //     " Next.js",
+    //     "Tailwind",
+    //     "Apollo Client",
+    //     " Zustand",
+    //     " React Hook Form",
+    //     "Zod",
+    //     "Kafka"
+    //   ],
+    //   github: "https://github.com/Qarib2004/crix",
+    //   status: "Completed"
+    //  }
   ];
 
   const openModal = (projectTitle: string) => {
@@ -261,7 +326,6 @@ function App() {
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
   };
-
 
   return (
     <div className="min-h-screen bg-slate-900 text-white">
@@ -302,8 +366,9 @@ function App() {
             </h2>
             <p className="text-xl text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed">
               Passionate about crafting exceptional digital experiences with
-              modern technologies. Specializing in React,Next.js,NestJS,Node.js,Spring
-              Boot, and building scalable web applications.
+              modern technologies. Specializing in
+              React,Next.js,NestJS,Node.js,Spring Boot, and building scalable
+              web applications.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
@@ -438,9 +503,7 @@ function App() {
                               ? "bg-blue-400/20 text-blue-300 border border-blue-400/30"
                               : "bg-blue-300/20 text-blue-300 border border-blue-300/30"
                           }`}
-                        >
-                          
-                        </span>
+                        ></span>
                         {/* {skill.badge && (
                           <span
                             className={`px-2 py-1 text-xs rounded-full ${
