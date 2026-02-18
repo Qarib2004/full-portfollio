@@ -121,23 +121,23 @@ function App() {
       "/crix-images/21.png",
     ],
     RentCar: [
-      "/rentcar-images/rent-1",
-      "/rentcar-images/rent-2",
-      "/rentcar-images/rent-3",
-      "/rentcar-images/rent-4",
-      "/rentcar-images/rent-5",
-      "/rentcar-images/rent-6",
-      "/rentcar-images/rent-7",
-      "/rentcar-images/rent-8",
-      "/rentcar-images/rent-9",
-      "/rentcar-images/rent-10",
-      "/rentcar-images/rent-11",
-      "/rentcar-images/rent-12",
-      "/rentcar-images/rent-13",
-      "/rentcar-images/rent-14",
-      "/rentcar-images/rent-15",
-      "/rentcar-images/rent-16",
-      "/rentcar-images/rent-17",
+      "/rentcar-images/rent-1.png",
+      "/rentcar-images/rent-2.png",
+      "/rentcar-images/rent-3.png",
+      "/rentcar-images/rent-4.png",
+      "/rentcar-images/rent-5.png",
+      "/rentcar-images/rent-6.png",
+      "/rentcar-images/rent-7.png",
+      "/rentcar-images/rent-8.png",
+      "/rentcar-images/rent-9.png",
+      "/rentcar-images/rent-10.png",
+      "/rentcar-images/rent-11.png",
+      "/rentcar-images/rent-12.png",
+      "/rentcar-images/rent-13.png",
+      "/rentcar-images/rent-14.png",
+      "/rentcar-images/rent-15.png",
+      "/rentcar-images/rent-16.png",
+      "/rentcar-images/rent-17.png",
     ],
   };
 
@@ -440,7 +440,7 @@ function App() {
                 </div>
               </div>
 
-              <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50 hover:border-purple-500/50 transition-all duration-300">
+              {/* <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50 hover:border-purple-500/50 transition-all duration-300">
                 <div className="text-center">
                   <Database className="w-12 h-12 text-purple-400 mx-auto mb-4" />
                   <h3 className="text-2xl font-bold text-white mb-2">
@@ -448,7 +448,7 @@ function App() {
                   </h3>
                   <p className="text-slate-400">Java Backend Program</p>
                 </div>
-              </div>
+              </div> */}
 
               <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50 hover:border-yellow-500/50 transition-all duration-300">
                 <div className="text-center">
