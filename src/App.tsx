@@ -1133,11 +1133,10 @@ export default function App() {
         "TypeScript",
         "PostgreSQL",
         "Prisma",
-        "Scss module",
+        "SCSS Modules",
         "Stripe",
         "Zustand",
-        "TanStack Query",
-        "Tailwind"
+        "TanStack Query"
       ],
       github: "https://github.com/Qarib2004/parfum-store",
       live_demo: "https://parfum-store-3pbs.vercel.app/",
