@@ -1044,7 +1044,7 @@ export default function App() {
         "Full-featured Reddit clone with user authentication, post creation, voting system, real-time comments. Panel: admin, moderator, user",
       tech: [
         "React",
-        "Node.js",
+        "Express.js",
         "MongoDB",
         "Socket.io",
         "OAuth2.0",
@@ -1106,7 +1106,7 @@ export default function App() {
         "Modern e-commerce platform with full product catalog, Google OAuth, Stripe payments, testing suite.",
       tech: [
         "Next.js",
-        "Nest.js",
+        "NestJS",
         "TypeScript",
         "PostgreSQL",
         "Shadcn",
@@ -1125,7 +1125,7 @@ export default function App() {
         "Movie streaming platform with catalog, genre browsing, user authentication. Admin and user panels.",
       tech: [
         "Next.js",
-        "Nest.js",
+        "NestJS",
         "TypeScript",
         "PostgreSQL",
         "Prisma",
