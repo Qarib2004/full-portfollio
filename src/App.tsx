@@ -574,6 +574,9 @@ function ProjectCard({
     "#06b6d4",
   ];
   const color = colors[index % colors.length];
+  const [expanded, setExpanded] = useState(false);
+
+  const toggleExpanded = () => setExpanded(!expanded);
 
   return (
     <div
@@ -654,21 +657,32 @@ function ProjectCard({
           }}
         >
           {project.status.toUpperCase()}
+          
         </span>
       </div>
 
       <p
-        style={{
-          color: "#64748b",
-          fontSize: 13,
-          lineHeight: 1.7,
-          marginBottom: 16,
-          fontFamily: "'Fira Code', monospace",
-        }}
-      >
-        <span style={{ color: "#475569" }}>// </span>
-        {project.description}
-      </p>
+  onClick={toggleExpanded} // клик для разворачивания
+  style={{
+    color: "#64748b",
+    fontSize: 13,
+    lineHeight: 1.7,
+    marginBottom: 16,
+    fontFamily: "'Fira Code', monospace",
+    cursor: "pointer",
+    overflow: "hidden",
+    display: "-webkit-box",
+    WebkitLineClamp: expanded ? "none" : 3, // показываем 3 строки, если не expanded
+    WebkitBoxOrient: "vertical",
+    wordBreak: "break-word",
+  }}
+>
+  <span style={{ color: "#475569" }}>// </span>
+  {project.description}
+  {!expanded && project.description.length > 100 && (
+    <span style={{ color: "#0ea5e9" }}>...читать дальше</span>
+  )}
+</p>
 
       <div
         style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 16 }}
@@ -1077,15 +1091,15 @@ export default function App() {
       github: "https://github.com/Qarib2004/rentcar",
       status: "Completed",
     },
-    {
-      title: "React Classroom",
-      description:
-        "Educational platform for managing classroom activities, assignments, and student-teacher interactions.",
-      tech: ["React", "JavaScript", "Redux", "REST API", "Socket.io"],
-      github: "https://github.com/nurlan1717/react-classroom-project",
-      live_demo: "https://react-classroom-project.vercel.app/",
-      status: "Completed",
-    },
+    // {
+    //   title: "React Classroom",
+    //   description:
+    //     "Educational platform for managing classroom activities, assignments, and student-teacher interactions.",
+    //   tech: ["React", "JavaScript", "Redux", "REST API", "Socket.io"],
+    //   github: "https://github.com/nurlan1717/react-classroom-project",
+    //   live_demo: "https://react-classroom-project.vercel.app/",
+    //   status: "Completed",
+    // },
     {
       title: "NeoShop",
       description:
