@@ -401,32 +401,32 @@ function ImageModal({
             background: "#030912",
           }}
         >
-        {images[current].endsWith(".mp4") ? (
-  <video
-    src={images[current]}
-    style={{
-      maxWidth: "100%",
-      maxHeight: "60vh",
-      objectFit: "contain",
-      display: "block",
-    }}
-    controls
-    autoPlay
-    muted
-    loop
-  />
-) : (
-  <img
-    src={images[current]}
-    alt={`${projectTitle} screenshot ${current + 1}`}
-    style={{
-      maxWidth: "100%",
-      maxHeight: "60vh",
-      objectFit: "contain",
-      display: "block",
-    }}
-  />
-)}
+          {images[current].endsWith(".mp4") ? (
+            <video
+              src={images[current]}
+              style={{
+                maxWidth: "100%",
+                maxHeight: "60vh",
+                objectFit: "contain",
+                display: "block",
+              }}
+              controls
+              autoPlay
+              muted
+              loop
+            />
+          ) : (
+            <img
+              src={images[current]}
+              alt={`${projectTitle} screenshot ${current + 1}`}
+              style={{
+                maxWidth: "100%",
+                maxHeight: "60vh",
+                objectFit: "contain",
+                display: "block",
+              }}
+            />
+          )}
         </div>
 
         <button
@@ -468,40 +468,40 @@ function ImageModal({
           scrollbarWidth: "thin",
         }}
       >
-      {images.map((src, i) => (
-  <div
-    key={i}
-    onClick={() => setCurrent(i)}
-    style={{
-      flexShrink: 0,
-      width: 60,
-      height: 40,
-      borderRadius: 4,
-      overflow: "hidden",
-      cursor: "pointer",
-      border: `2px solid ${i === current ? "#00ff88" : "#1e293b"}`,
-      transition: "border-color 0.2s, transform 0.2s",
-      transform: i === current ? "scale(1.08)" : "scale(1)",
-      opacity: i === current ? 1 : 0.5,
-    }}
-  >
-    {src.endsWith(".mp4") ? (
-      <video
-        src={src}
-        style={{ width: "100%", height: "100%", objectFit: "cover" }}
-        muted
-        loop
-        autoPlay
-      />
-    ) : (
-      <img
-        src={src}
-        alt={`thumb ${i + 1}`}
-        style={{ width: "100%", height: "100%", objectFit: "cover" }}
-      />
-    )}
-  </div>
-))}
+        {images.map((src, i) => (
+          <div
+            key={i}
+            onClick={() => setCurrent(i)}
+            style={{
+              flexShrink: 0,
+              width: 60,
+              height: 40,
+              borderRadius: 4,
+              overflow: "hidden",
+              cursor: "pointer",
+              border: `2px solid ${i === current ? "#00ff88" : "#1e293b"}`,
+              transition: "border-color 0.2s, transform 0.2s",
+              transform: i === current ? "scale(1.08)" : "scale(1)",
+              opacity: i === current ? 1 : 0.5,
+            }}
+          >
+            {src.endsWith(".mp4") ? (
+              <video
+                src={src}
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                muted
+                loop
+                autoPlay
+              />
+            ) : (
+              <img
+                src={src}
+                alt={`thumb ${i + 1}`}
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              />
+            )}
+          </div>
+        ))}
       </div>
 
       <div
@@ -657,32 +657,31 @@ function ProjectCard({
           }}
         >
           {project.status.toUpperCase()}
-          
         </span>
       </div>
 
       <p
-  onClick={toggleExpanded} // клик для разворачивания
-  style={{
-    color: "#64748b",
-    fontSize: 13,
-    lineHeight: 1.7,
-    marginBottom: 16,
-    fontFamily: "'Fira Code', monospace",
-    cursor: "pointer",
-    overflow: "hidden",
-    display: "-webkit-box",
-    WebkitLineClamp: expanded ? "none" : 3, // показываем 3 строки, если не expanded
-    WebkitBoxOrient: "vertical",
-    wordBreak: "break-word",
-  }}
->
-  <span style={{ color: "#475569" }}>// </span>
-  {project.description}
-  {!expanded && project.description.length > 100 && (
-    <span style={{ color: "#0ea5e9" }}>...читать дальше</span>
-  )}
-</p>
+        onClick={toggleExpanded} // клик для разворачивания
+        style={{
+          color: "#64748b",
+          fontSize: 13,
+          lineHeight: 1.7,
+          marginBottom: 16,
+          fontFamily: "'Fira Code', monospace",
+          cursor: "pointer",
+          overflow: "hidden",
+          display: "-webkit-box",
+          WebkitLineClamp: expanded ? "none" : 3, // показываем 3 строки, если не expanded
+          WebkitBoxOrient: "vertical",
+          wordBreak: "break-word",
+        }}
+      >
+        <span style={{ color: "#475569" }}>// </span>
+        {project.description}
+        {!expanded && project.description.length > 100 && (
+          <span style={{ color: "#0ea5e9" }}>...читать дальше</span>
+        )}
+      </p>
 
       <div
         style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 16 }}
@@ -1032,9 +1031,7 @@ export default function App() {
       "/rentcar-images/rent-16.png",
       "/rentcar-images/rent-17.png",
     ],
-    ESSENCE:[
-      "/essence/video-ai-image.mp4"
-    ]
+    ESSENCE: ["/essence/video-ai-image.mp4"],
   };
 
   const projects: Project[] = [
@@ -1150,10 +1147,29 @@ export default function App() {
         "SCSS Modules",
         "Stripe",
         "Zustand",
-        "TanStack Query"
+        "TanStack Query",
       ],
       github: "https://github.com/Qarib2004/parfum-store",
       live_demo: "https://parfum-store-3pbs.vercel.app/",
+      status: "Completed",
+    },
+    {
+      title: "Build.PC",
+      description:
+        "On this website, you can build your own PC and see how much it will cost. You can also view other users' builds—if, of course, they made them public—and give them likes.",
+      tech: [
+        "Next.js",
+        "TypeScript",
+        "PostgreSQL",
+        "Prisma",
+        "Tailwind",
+        "Radix UI",
+        "NextAuth",
+        "Next Themes",
+        "bcryptjs"
+      ],
+      github: "https://github.com/Qarib2004/build-pc",
+      live_demo: "https://build-pc-sigma.vercel.app/",
       status: "Completed",
     },
   ];
