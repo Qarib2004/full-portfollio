@@ -85,7 +85,7 @@ function MatrixRain() {
           Math.random() > 0.95
             ? "#fff"
             : `rgba(0,${Math.floor(Math.random() * 100 + 155)},${Math.floor(
-                Math.random() * 50
+                Math.random() * 50,
               )},${Math.random() * 0.5 + 0.1})`;
         ctx.fillText(char, i * fontSize, y * fontSize);
         if (y * fontSize > H && Math.random() > 0.975) drops[i] = 0;
@@ -738,9 +738,8 @@ function ProjectCard({
           }}
           onMouseEnter={(e) => {
             (e.currentTarget as HTMLAnchorElement).style.color = color;
-            (
-              e.currentTarget as HTMLAnchorElement
-            ).style.borderColor = `${color}40`;
+            (e.currentTarget as HTMLAnchorElement).style.borderColor =
+              `${color}40`;
           }}
           onMouseLeave={(e) => {
             (e.currentTarget as HTMLAnchorElement).style.color = "#475569";
@@ -773,9 +772,8 @@ function ProjectCard({
             }}
             onMouseEnter={(e) => {
               (e.currentTarget as HTMLAnchorElement).style.color = color;
-              (
-                e.currentTarget as HTMLAnchorElement
-              ).style.borderColor = `${color}40`;
+              (e.currentTarget as HTMLAnchorElement).style.borderColor =
+                `${color}40`;
             }}
             onMouseLeave={(e) => {
               (e.currentTarget as HTMLAnchorElement).style.color = "#475569";
@@ -817,12 +815,10 @@ function ProjectCard({
             }}
             onMouseEnter={(e) => {
               (e.currentTarget as HTMLButtonElement).style.color = color;
-              (
-                e.currentTarget as HTMLButtonElement
-              ).style.borderColor = `${color}40`;
-              (
-                e.currentTarget as HTMLButtonElement
-              ).style.background = `${color}08`;
+              (e.currentTarget as HTMLButtonElement).style.borderColor =
+                `${color}40`;
+              (e.currentTarget as HTMLButtonElement).style.background =
+                `${color}08`;
             }}
             onMouseLeave={(e) => {
               (e.currentTarget as HTMLButtonElement).style.color = "#475569";
@@ -1166,10 +1162,28 @@ export default function App() {
         "Radix UI",
         "NextAuth",
         "Next Themes",
-        "bcryptjs"
+        "bcryptjs",
       ],
       github: "https://github.com/Qarib2004/build-pc",
       live_demo: "https://build-pc-sigma.vercel.app/",
+      status: "Completed",
+    },
+    {
+      title: "GGGAMZ",
+      description:
+        "A game tracker website where you can browse completed games with reviews and ratings. The admin can add games via RAWG API integration (login: admin, password: 123456). Built with Elysia.js as the backend framework, Drizzle ORM for database management, and Cloudflare Turnstile for captcha protection.",
+      tech: [
+        "React",
+        "TypeScript",
+        "PostgreSQL",
+        "Drizzle ORM",
+        "Tailwind",
+        "Elysia.js",
+        "Cloudflare Turnstile",
+        "rawg API",
+      ],
+      github: "https://github.com/Qarib2004/gggamz",
+      live_demo: "https://gggamz.vercel.app/",
       status: "Completed",
     },
   ];
@@ -1799,9 +1813,8 @@ export default function App() {
                     transition: "border-color 0.2s, transform 0.2s",
                   }}
                   onMouseEnter={(e) => {
-                    (
-                      e.currentTarget as HTMLElement
-                    ).style.borderColor = `${color}40`;
+                    (e.currentTarget as HTMLElement).style.borderColor =
+                      `${color}40`;
                     (e.currentTarget as HTMLElement).style.transform =
                       "translateX(4px)";
                   }}
@@ -1907,9 +1920,8 @@ export default function App() {
                   transition: "border-color 0.3s",
                 }}
                 onMouseEnter={(e) =>
-                  ((
-                    e.currentTarget as HTMLElement
-                  ).style.borderColor = `${color}30`)
+                  ((e.currentTarget as HTMLElement).style.borderColor =
+                    `${color}30`)
                 }
                 onMouseLeave={(e) =>
                   ((e.currentTarget as HTMLElement).style.borderColor =
@@ -2091,9 +2103,8 @@ export default function App() {
                       transition: "border-color 0.2s",
                     }}
                     onMouseEnter={(e) =>
-                      ((
-                        e.currentTarget as HTMLElement
-                      ).style.borderColor = `${color}40`)
+                      ((e.currentTarget as HTMLElement).style.borderColor =
+                        `${color}40`)
                     }
                     onMouseLeave={(e) =>
                       ((e.currentTarget as HTMLElement).style.borderColor =
@@ -2217,14 +2228,12 @@ export default function App() {
                       transition: "all 0.2s",
                     }}
                     onMouseEnter={(e) => {
-                      (
-                        e.currentTarget as HTMLAnchorElement
-                      ).style.borderColor = `${color}40`;
+                      (e.currentTarget as HTMLAnchorElement).style.borderColor =
+                        `${color}40`;
                       (e.currentTarget as HTMLAnchorElement).style.color =
                         color;
-                      (
-                        e.currentTarget as HTMLAnchorElement
-                      ).style.background = `${color}08`;
+                      (e.currentTarget as HTMLAnchorElement).style.background =
+                        `${color}08`;
                     }}
                     onMouseLeave={(e) => {
                       (e.currentTarget as HTMLAnchorElement).style.borderColor =
