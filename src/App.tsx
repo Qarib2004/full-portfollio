@@ -1105,7 +1105,6 @@ export default function App() {
         "Shadcn",
         "Google OAuth 2.0",
         "Prisma",
-        "Docker",
         "Stripe",
         "Jest",
       ],
@@ -1122,7 +1121,6 @@ export default function App() {
         "TypeScript",
         "PostgreSQL",
         "Prisma",
-        "Docker",
         "Tailwind",
         "Stripe",
       ],
@@ -2273,7 +2271,7 @@ export default function App() {
           {" · "}
           <span>built with React & 💚</span>
           {" · "}
-          <span>© 2025</span>
+          <span>© 2026</span>
         </div>
       </footer>
     </>
