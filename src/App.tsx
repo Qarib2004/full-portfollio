@@ -929,16 +929,8 @@ export default function App() {
       "PostgreSQL",
       "MongoDB",
       "REST APIs",
-        ],
-    tools: [
-      "Git/GitHub",
-      "Postman",
-      "Swagger",
-      "Vite",
-      "npm",
-      "Yarn",
-      "Bun",
     ],
+    tools: ["Git/GitHub", "Postman", "Swagger", "Vite", "npm", "Yarn", "Bun"],
   };
 
   const projectImages: Record<string, string[]> = {
@@ -1179,6 +1171,32 @@ export default function App() {
       ],
       github: "https://github.com/Qarib2004/gggamz",
       live_demo: "https://gggamz.vercel.app/",
+      status: "Completed",
+    },
+    {
+      title: "Fitness Management Platform",
+      description:
+        "A full-stack fitness management platform with role-based dashboards for admins, trainers, and clients. Admins can manage users, packages, rooms, classes, and schedules; trainers can view their classes and attendance; clients can browse schedules, book sessions, and manage active packages.",
+      tech: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "NestJS",
+        "PostgreSQL",
+        "Drizzle ORM",
+        "Supabase Auth",
+        "TanStack Query",
+        "Axios",
+        "Jotai",
+        "React Hook Form",
+        "Zod",
+        "Framer Motion",
+        "Lenis",
+        "Recharts",
+        "Lucide React",
+      ],
+      github: "https://github.com/Qarib2004/fitnes",
+      live_demo: "https://fitnes-henna.vercel.app/",
       status: "Completed",
     },
   ];
